@@ -2,9 +2,9 @@
 
 English | [Chinese version](README_zh.md)
 
-X-Translator is a modular, low-cost speech-to-speech translation demo. It connects streaming ASR, machine translation, and prompt-conditioned TTS through a lightweight runtime controller, so the browser can display source text, translated text, and synthesized target speech during a live session. Try the online demo at [https://translate.sjtuxlance.com/](https://translate.sjtuxlance.com/).
+X-Translator is a real-time speaker-aware speech-to-speech translation system. It connects streaming ASR, machine translation, and prompt-conditioned TTS through a lightweight runtime controller, so the browser can display source text, translated text, and synthesized target speech during a live session. Try the online demo at [https://translate.sjtuxlance.com/](https://translate.sjtuxlance.com/).
 
-The current release focuses on the local demo code. Evaluation code and the paper will be released later.
+The current release focuses on the local demo code. Evaluation code, server code and the paper will be released later.
 
 ## Architecture
 

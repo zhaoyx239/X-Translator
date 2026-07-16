@@ -2,9 +2,9 @@
 
 [English](README.md) | 中文
 
-X-Translator 是一个模块化、低成本的语音到语音翻译演示系统。它通过轻量级运行时控制器连接流式 ASR、机器翻译和基于提示音频的 TTS，让浏览器在实时会话中展示源语音识别文本、翻译文本和合成后的目标语音。在线 demo 地址：[https://translate.sjtuxlance.com/](https://translate.sjtuxlance.com/)。
+X-Translator 是一个实时、说话人感知的语音到语音翻译系统。它通过轻量级运行时控制器连接流式 ASR、机器翻译和基于提示音频的 TTS，让浏览器在实时会话中展示源语音识别文本、翻译文本和合成后的目标语音。在线 demo 地址：[https://translate.sjtuxlance.com/](https://translate.sjtuxlance.com/)。
 
-当前版本主要发布本地 demo 代码。评测代码和论文将在后续发布。
+当前版本主要发布本地 demo 代码。评测代码、server 代码和论文将在后续发布。
 
 ## 系统架构
 
@@ -73,7 +73,7 @@ http://0.0.0.0:7654
 
 ## Citation
 
-论文挂到 arXiv 后会补充正式引用。
+论文提交到 arXiv 后会补充正式引用。
 
 ```bibtex
 @misc{xtranslator2026,
