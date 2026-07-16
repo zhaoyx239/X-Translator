@@ -2,9 +2,9 @@
 
 English | [Chinese version](README_zh.md)
 
-X-Translator is a modular, low-cost speech-to-speech translation demo. It connects streaming ASR, machine translation, and prompt-conditioned TTS through a lightweight runtime controller, so the browser can display source text, translated text, and synthesized target speech during a live session.
+X-Translator is a modular, low-cost speech-to-speech translation demo. It connects streaming ASR, machine translation, and prompt-conditioned TTS through a lightweight runtime controller, so the browser can display source text, translated text, and synthesized target speech during a live session. Try the online demo at [https://translate.sjtuxlance.com/](https://translate.sjtuxlance.com/).
 
-The current release focuses on the local demo code. Server-side components, evaluation code, and the paper will be released later.
+The current release focuses on the local demo code. Evaluation code and the paper will be released later.
 
 ## Architecture
 
@@ -20,7 +20,6 @@ The current release focuses on the local demo code. Server-side components, eval
 
 - `backend/`: FastAPI backend, runtime controller, ASR/MT/TTS clients, and session logic.
 - `frontend/`: Static browser demo UI.
-- `server/`: Example local service wrappers for supported backends.
 - `main.py`: Local application entry point.
 - `config.json`: Default runtime configuration.
 - `start.sh`: Convenience script for launching the demo.
@@ -55,12 +54,6 @@ The default configuration assumes local backend services. Start the ASR, MT, and
 
 ## Run the Demo
 
-Online demo:
-
-```text
-https://translate.sjtuxlance.com/
-```
-
 ```bash
 bash start.sh
 ```
@@ -94,6 +87,6 @@ The paper citation will be added after the arXiv release.
 
 ## Acknowledgements
 
-We thank XTalk, [X-ASR](server/X-ASR), [Qwen3-ASR](https://github.com/QwenLM/Qwen3-Omni), [Paraformer](https://github.com/modelscope/FunASR), [SenseVoice](https://github.com/FunAudioLLM/SenseVoice), [NiuTrans LMT](https://github.com/NiuTrans/LMT), [Hunyuan-MT](https://github.com/Tencent-Hunyuan/Hunyuan-MT), [X-Voice](https://arxiv.org/abs/2605.05611), [IndexTTS](https://github.com/index-tts/index-tts), and [OpenSTBench](https://arxiv.org/abs/2605.30792) for their contributions to the broader speech translation ecosystem.
+We thank [XTalk](https://github.com/xcc-zach/xtalk), [X-ASR](https://github.com/Gilgamesh-J/X-ASR), [Qwen3-ASR](https://github.com/QwenLM/Qwen3-ASR), [Paraformer](https://github.com/modelscope/FunASR), [SenseVoice](https://github.com/FunAudioLLM/SenseVoice), [NiuTrans LMT](https://github.com/NiuTrans/LMT), [Hunyuan-MT](https://github.com/Tencent-Hunyuan/Hunyuan-MT), [X-Voice](https://github.com/sunnyxrxrx/X-Voice), [IndexTTS](https://github.com/index-tts/index-tts), and [OpenSTBench](https://github.com/sjtuayj/OpenSTBench) for their contributions to the broader speech translation ecosystem.
 
 X-Translator code is released under the MIT License. Third-party modules, models, and services used with this project remain governed by their original licenses.
