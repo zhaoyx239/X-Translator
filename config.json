@@ -1,0 +1,65 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 7654
+  },
+  "audio": {
+    "sample_rate": 16000,
+    "tts_sample_rate": 48000,
+    "pre_buffer_frames": 20
+  },
+  "asr": {
+    "provider": "qwen3",
+    "qwen3_asr_url": "http://localhost:8001/v1/recognize",
+    "zipformer_server_uri": "ws://127.0.0.1:8765",
+    "zipformer_chunk_size": 7680,
+    "zipformer_window_seconds": 3.2,
+    "zipformer_init_turn_seconds": 1.6,
+    "zipformer_use_ctpunc": false,
+    "paraformer_model": "iic/speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-pytorch",
+    "paraformer_hub": "ms",
+    "sensevoice_language": "zh",
+    "sensevoice_device": "cuda",
+    "chunk_seconds": 1.6,
+    "paraformer_chunk_size": 2560,
+    "paraformer_window_seconds": 3.2,
+    "paraformer_init_turn_seconds": 1.6,
+    "paraformer_device": "cuda"
+  },
+  "translation": {
+    "provider": "lmt",
+    "hunyuan_url": "http://localhost:8000/v1/chat/completions",
+    "lmt_url": "http://localhost:8002/v1/chat/completions",
+    "model": "",
+    "max_tokens": 256,
+    "source_lang": "zh",
+    "target_lang": "en",
+    "emit_min_chars": 6,
+    "emit_interval_seconds": 0.8
+  },
+  "tts": {
+    "index_tts_url": "http://localhost:11996/tts_url",
+    "omni_tts_url": "http://localhost:11997/synthesize",
+    "xvoice_tts_url": "http://localhost:11998/synthesize",
+    "provider": "xvoice",
+    "clone_window_seconds": 6.0,
+    "speaker_prompt_enabled": true,
+    "speaker_embedding_provider": "modelscope_campplus",
+    "speaker_embedding_model": "iic/speech_campplus_sv_zh-cn_16k-common",
+    "speaker_embedding_window_seconds": 1.0,
+    "speaker_embedding_hop_seconds": 0.5,
+    "speaker_prompt_min_seconds": 1.0,
+    "speaker_prompt_max_seconds": 6.0,
+    "speaker_vad_frame_ms": 40,
+    "speaker_silence_dbfs": -42.0,
+    "speaker_vad_margin_db": 10.0,
+    "speaker_change_threshold": 0.45
+  },
+  "storage": {
+    "session_audio_dir": "xtranslate/runtime/session_audio",
+    "log_dir": "xtranslate/runtime/logs"
+  },
+  "frontend": {
+    "show_speaker": false
+  }
+}
