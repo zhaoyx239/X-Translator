@@ -4,7 +4,7 @@ English | [Chinese version](README_zh.md)
 
 X-Translator is a real-time speaker-aware speech-to-speech translation system. It connects streaming ASR, machine translation, and prompt-conditioned TTS through a lightweight runtime controller, so the browser can display source text, translated text, and synthesized target speech during a live session. Try the online demo at [https://translate.sjtuxlance.com/](https://translate.sjtuxlance.com/).
 
-The current release focuses on the local demo code. Evaluation code, server code and the paper will be released later.
+The current release includes the local demo and backend service adapters. Evaluation code will be released later.
 
 ## Architecture
 
@@ -20,6 +20,7 @@ The current release focuses on the local demo code. Evaluation code, server code
 
 - `backend/`: FastAPI backend, runtime controller, ASR/MT/TTS clients, and session logic.
 - `frontend/`: Static browser demo UI.
+- `server/`: ASR, MT, and TTS service adapters, setup notes, and tmux launchers.
 - `main.py`: Local application entry point.
 - `config.json`: Default runtime configuration.
 - `start.sh`: Convenience script for launching the demo.
@@ -52,6 +53,8 @@ Edit `config.json` before running the demo. In most cases, only these fields nee
 
 The default configuration assumes local backend services. Start the ASR, MT, and TTS services you select in `config.json` before launching the browser demo.
 
+See [`server/README.md`](server/README.md) for backend installation and multi-service startup instructions.
+
 ## Run the Demo
 
 ```bash
@@ -67,9 +70,9 @@ http://0.0.0.0:7654
 ## TODO
 
 - [x] Release demo code.
-- [ ] Release full server code.
+- [x] Release server adapters and launchers.
 - [ ] Release evaluation code.
-- [ ] Release paper.
+- [x] Release paper.
 
 ## Citation
 
