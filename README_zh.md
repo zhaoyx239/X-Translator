@@ -73,15 +73,15 @@ http://0.0.0.0:7654
 
 ## Citation
 
-论文提交到 arXiv 后会补充正式引用。
-
 ```bibtex
-@misc{xtranslator2026,
-  title        = {X-Translator},
-  author       = {TBD},
-  year         = {2026},
-  archivePrefix = {arXiv},
-  eprint       = {TBD}
+@misc{zhao2026xtranslatorrealtimemultilingualspeakeraware,
+      title={X-Translator: A Real-Time Multilingual Speaker-Aware Speech-to-Speech Translation System}, 
+      author={Yuxiang Zhao and Yichi Zhang and Yanjie An and Yanqiao Zhu and Zhanxun Liu and Yushen Chen and Qixi Zheng and Haina Zhu and Yunchong Xiao and Keqi Deng and Shuai Fan and Kai Yu and Xie Chen},
+      year={2026},
+      eprint={2607.17544},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2607.17544}, 
 }
 ```
 
